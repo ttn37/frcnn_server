@@ -180,7 +180,7 @@ def get_predict(img):
             #cv2.rectangle(img,(real_x1, real_y1), (real_x2, real_y2), (int(class_to_color[key][0]), int(class_to_color[key][1]), int(class_to_color[key][2])),4)
 
             #textLabel = '{}: {}'.format(key,int(100*new_probs[jk]))
-            all_dets.append({"class":key,  "score":100*new_probs[jk], "xmin":real_x1, "xmax":real_x2, "ymin":real_y1, "ymax"real_y2})
+            all_dets.append({"class":key,  "score":100*new_probs[jk], "xmin":real_x1, "xmax":real_x2, "ymin":real_y1, "ymax":real_y2})
 
             # (retval,baseLine) = cv2.getTextSize(textLabel,cv2.FONT_HERSHEY_COMPLEX,1,1)
             # textOrg = (real_x1, real_y1-0)
