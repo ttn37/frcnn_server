@@ -108,7 +108,7 @@ def get_real_coordinates(ratio, x1, y1, x2, y2):
 	return (real_x1, real_y1, real_x2 ,real_y2)
 
 def get_predict(img):
-    bbox_threshold = 0.7
+    bbox_threshold = 0.8
     X, ratio = format_img(img, C)
     st = time.time()
     X = np.transpose(X, (0, 2, 3, 1))
